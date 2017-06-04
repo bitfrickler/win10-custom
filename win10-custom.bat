@@ -152,7 +152,7 @@ echo runtimes
 cinst -y jdk8 dotnetcore dotnetcore-sdk dotnet4.7 netfx-4.7-devpack adobeair adobeshockwaveplayer silverlight
 
 echo development
-cinst -y visualstudiocode notepadplusplus dotpeek autohotkey autoit golang python2 python3 ruby lua53 git jdk8 powershell nodejs nuget.commandline packer vagrant sqlite.shell sqlitebrowser
+cinst -y visualstudiocode notepadplusplus dotpeek autohotkey autoit golang lua53 git jdk8 powershell nodejs nuget.commandline packer vagrant sqlite.shell sqlitebrowser
 
 echo install Windows subsystem for Linux
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -ExecutionPolicy Bypass -Command "Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux -NoRestart"
