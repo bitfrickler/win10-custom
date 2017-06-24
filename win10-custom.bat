@@ -161,9 +161,5 @@ cinst -y visualstudiocode notepadplusplus dotpeek autohotkey autoit golang lua53
 echo install Windows subsystem for Linux
 @"%SystemRoot%\System32\WindowsPowerShell\v1.0\powershell.exe" -NoProfile -ExecutionPolicy Bypass -Command "Enable-WindowsOptionalFeature -Online -FeatureName Microsoft-Windows-Subsystem-Linux -NoRestart"
 
-echo restart Explorer... 
-taskkill /f /im explorer.exe >nul & explorer.exe
-schtasks /delete /tn "CreateExplorerShellUnelevatedTask" /f > nul
-
 echo Done! You should reboot now!
 pause
